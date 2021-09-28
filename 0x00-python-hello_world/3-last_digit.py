@@ -14,8 +14,6 @@ if number > 0:
         firstPart = "Last digit of " + str(number) + " is "
         secondPart = str(positiveDigit) + " and is less than 6 and not 0"
         print(firstPart + secondPart)
-        #print("Last digit of " + str(number) + " is " + str(positiveDigit) + " and is less than 6 and not 0")
-
 
 # Case for negative numbers: Converting the last number into a positive
 if number < 0:
