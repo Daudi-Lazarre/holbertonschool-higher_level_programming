@@ -15,8 +15,8 @@ if number > 0:
 
 # Case for negative numbers: Converting the last number into a positive
 if number < 0:
-    negativeDigit = number % 10
-    negativeDigit = negativeDigit * -1
+    negativeDigit = number % -10
+    # negativeDigit = negativeDigit * -1
     if negativeDigit > 5:
         print("Last digit of " + str(number) +  " is " + str(negativeDigit) + " and is greater than 5")
     if negativeDigit == 0:
