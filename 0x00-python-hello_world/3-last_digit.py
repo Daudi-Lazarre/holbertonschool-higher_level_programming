@@ -28,5 +28,6 @@ if number < 0:
         secondPart = str(negativeDigit) + " and is less than 6 and not 0"
         print(firstPart + secondPart)
 
+# Case for zero
 if number == 0:
     print("Last digit of " + str(number) + " is " + str(number) + " and is 0")
