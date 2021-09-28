@@ -9,7 +9,7 @@ if number > 0:
         firstPart = "Last digit of " + str(number) + " is "
         secondPart = str(positiveDigit) + " and is greater than 5"
         print(firstPart + secondPart)
-        #print("Last digit of " + str(number) + " is " + str(positiveDigit) + " and is greater than 5")
+ 
     if (positiveDigit < 6) & (positiveDigit != 0):
         firstPart = "Last digit of " + str(number) + " is "
         secondPart = str(positiveDigit) + " and is less than 6 and not 0"
