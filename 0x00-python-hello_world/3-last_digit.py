@@ -22,3 +22,6 @@ if number < 0:
         print("Last digit of " + str(number) +  " is " + str(negativeDigit) + " and is 0")
     if (negativeDigit < 6) & (negativeDigit != 0):
         print("Last digit of " + str(number) +  " is " + str(negativeDigit) + " and is less than 6 and not 0")
+
+if number == 0:
+    print("Last digit of " + str(number) +  " is " + str(number) + " and is 0")
