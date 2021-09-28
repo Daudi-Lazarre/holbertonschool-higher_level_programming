@@ -19,9 +19,14 @@ if number > 0:
 if number < 0:
     negativeDigit = number % -10
     if negativeDigit > 5:
-        print("Last digit of " + str(number) + " is " + str(negativeDigit) + " and is greater than 5")
+        firstPart = "Last digit of " + str(number) + " is "
+        secondPart = str(negativeDigit) + " and is greater than 5"
+        print(firstPart + secondPart)
+
     if (negativeDigit < 6) & (negativeDigit != 0):
-        print("Last digit of " + str(number) + " is " + str(negativeDigit) + " and is less than 6 and not 0")
+        firstPart = "Last digit of " + str(number) + " is "
+        secondPart = str(negativeDigit) + " and is less than 6 and not 0"
+        print(firstPart + secondPart)
 
 if number == 0:
     print("Last digit of " + str(number) + " is " + str(number) + " and is 0")
