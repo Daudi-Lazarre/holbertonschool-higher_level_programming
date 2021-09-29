@@ -10,6 +10,6 @@
 # end the printed statement with a comma and space
 # Then, once that is done, print the number 99
 
-for num in range(0, 99):
+for num in range(99):
     print("{:02d}".format(num), end=", ")
 print("{:02d}".format(num + 1))
