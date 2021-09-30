@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 import sys
 
+
 def main(*argv):
-
-
     i = 0
     total = len(sys.argv)
 
