@@ -8,7 +8,7 @@ def main(*argv):
 
     for args in sys.argv:
         if (i != 0):
-            print("{}: {}".format(i, args))
+            print("{:d}: {:d}".format(i, args))
             i = i + 1
 
     if total == 1:
