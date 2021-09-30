@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def safe_print_division(a, b):
     try:
-        ouput = a / b   
+        ouput = a/b   
     except ZeroDivisionError:
         output = None
 
