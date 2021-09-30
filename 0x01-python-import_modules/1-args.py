@@ -4,10 +4,9 @@ import sys
 
 def main(*argv):
     i = 0
-    total = len(sys.argv) - 1
+    total = len(sys.argv)
 
     for args in sys.argv:
-        if (i != 0):
             print("{}: {}".format(i, args))
             i = i + 1
 
