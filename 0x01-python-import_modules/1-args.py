@@ -7,7 +7,7 @@ def main(*argv):
     total = len(sys.argv)
 
     if total == 1:
-        print("{:d} arguments:".format(total - 1))
+        print("{:d} arguments.".format(total - 1))
     elif total == 2:
         print("{:d} argument:".format(total - 1))
     else:
