@@ -4,7 +4,7 @@ import sys
 
 def main(*argv):
     i = 0
-    total = len(sys.argv)
+    total = len(sys.argv) - 1
 
     for args in sys.argv:
         if (i != 0):
