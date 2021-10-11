@@ -1,9 +1,23 @@
 """ Import the function, search for the name in the file """
 
 >>> add_integer = __import__('0-add_integer').add_integer
-
 >>> add_integer(1,2)
 3
+
 >>> add_integer()
 Traceback (most recent call last):
 TypeError: add_integer() missing 1 required positional argument: 'a'
+
+>>> add_integer(5, "LEAVE ME HERE")
+Traceback (most recent call last):
+raise TypeError("b must be an integer")
+TypeError: b must be an integer
+
+>>> add_integer(5.0,5.0)
+10.0
+
+>>> add_integer(-7,-3)
+-10
+
+>>> add_integer(1)
+99
