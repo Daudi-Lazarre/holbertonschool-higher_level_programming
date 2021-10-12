@@ -18,4 +18,3 @@ def matrix_divided(matrix, div):
     quotient = matrix / div
 
     return(round(quotient, 2))
-
