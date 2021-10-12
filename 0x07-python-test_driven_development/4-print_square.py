@@ -13,7 +13,6 @@ def print_square(size):
     for key in range(size):
         # The number typed in for the number of hashtags (columns)
         # is also the number for the rows
-        # hence the for loop after the print statement
+        # hence the for loop after the print
         [print("#", end="") for key in range(size)]
         print("")
-    print("\n")
