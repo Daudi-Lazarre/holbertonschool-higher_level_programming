@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""Prints someone's first and last name"""
+"""Return first and last name"""
 
 def say_my_name(first_name, last_name=""):
-    """Goes through strings"""
+    """Go through the string"""
     if type(first_name) is not str:
         raise TypeError("first_name must be a string")
     if type(last_name) is not str:
