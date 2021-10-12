@@ -16,3 +16,4 @@ def print_square(size):
         # hence the for loop after the print statement
         [print("#", end="") for key in range(size)]
         print("")
+    print("\n")
