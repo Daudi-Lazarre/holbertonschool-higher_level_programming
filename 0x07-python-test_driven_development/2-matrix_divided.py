@@ -2,7 +2,6 @@
 
 def matrix_divided(matrix, div):
 
-    # Append these bad boys
     matrix = [[1, 2, 3], [4, 5, 6]]
 
     if not isinstance(matrix, (int, float)):
