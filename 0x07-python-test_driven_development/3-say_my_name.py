@@ -1,13 +1,10 @@
 #!/usr/bin/python3
-"""print the first and last name"""
-
+"""Return first and last name"""
 
 def say_my_name(first_name, last_name=""):
-    """ function that prints a string """
-
-    if not isinstance(first_name, str):
+    """Go through the string"""
+    if type(first_name) is not str:
         raise TypeError("first_name must be a string")
-    if not isinstance(last_name, str):
+    if type(last_name) is not str:
         raise TypeError("last_name must be a string")
-    else:
-        print("My name is {} {}".format(first_name, last_name))
+    print("My name is {} {}".format(first_name, last_name))
