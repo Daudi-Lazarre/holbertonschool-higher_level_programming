@@ -11,5 +11,8 @@ def print_square(size):
             raise TypeError("size must be an integer")
     
     for key in range(size):
-        print("#", end="")
+        # The number typed in for the number of hashtags (columns)
+        # is also the number for the rows
+        # hence the for loop after the print statement
+        [print("#", end="") for key in range(size)]
         print("")
