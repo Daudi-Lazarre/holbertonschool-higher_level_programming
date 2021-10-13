@@ -1,8 +1,9 @@
 #!/usr/bin/python3
+""" Insert prototype here """
+
 
 def matrix_divided(matrix, div):
-
-    matrix = [[1, 2, 3], [4, 5, 6]]
+    """ This function divides the numbers in a matrix"""
 
     if not isinstance(matrix, (int, float)):
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
