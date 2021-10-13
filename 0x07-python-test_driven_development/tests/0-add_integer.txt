@@ -1,6 +1,7 @@
 """ Import the function, search for the name in the file """
 
 >>> add_integer = __import__('0-add_integer').add_integer
+
 >>> add_integer(1,2)
 3
 
@@ -10,7 +11,6 @@ TypeError: add_integer() missing 1 required positional argument: 'a'
 
 >>> add_integer(5, "LEAVE ME HERE")
 Traceback (most recent call last):
-raise TypeError("b must be an integer")
 TypeError: b must be an integer
 
 >>> add_integer(5.0,5.0)
@@ -27,12 +27,10 @@ TypeError: b must be an integer
 
 >>> add_integer("LEAVE ME HERE", 5)
 Traceback (most recent call last):
-raise TypeError("a must be an integer")
 TypeError: a must be an integer
 
 >>> add_integer("LEAVE ME HERE", "LEAVE ME HERE AGAIN")
 Traceback (most recent call last):
-raise TypeError("a must be an integer")
 TypeError: a must be an integer
 
 >>> add_integer(80)
@@ -43,6 +41,3 @@ TypeError: a must be an integer
 
 >>> add_integer(999999999999999999999999999999999999999999999999999)
 1000000000000000000000000000000000000000000000000097
-
-
-# Pi unironically works as an edge-case
