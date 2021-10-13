@@ -14,7 +14,7 @@ Traceback (most recent call last):
 TypeError: b must be an integer
 
 >>> add_integer(5.0,5.0)
-10
+10.0
 
 >>> add_integer(-7,-3)
 -10
