@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-""" BaseGeometry """
+"""BaseGeometry"""
 
 
 class BaseGeometry:
-    """ empty class """
+    """empty class"""
     pass
 
     def area(self):
