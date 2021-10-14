@@ -5,6 +5,7 @@
 class BaseGeometry:
     """ Class """
 
+
     def area(self):
         """ This is a public class """
         raise Exception("area() is not implemented")
