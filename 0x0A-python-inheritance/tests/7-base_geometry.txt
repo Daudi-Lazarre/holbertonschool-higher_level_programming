@@ -1,0 +1,12 @@
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+>>> baseGeo = BaseGeometry()
+
+>>> baseGeo.integer_validator("length", 9001)
+
+>>> baseGeo.integer_validator("width", 9001)
+
+>>> baseGeo.integer_validator("length", "9001")
+Traceback (most recent call last):
+raise TypeError(name + " must be an integer")
+TypeError: length must be an integer
