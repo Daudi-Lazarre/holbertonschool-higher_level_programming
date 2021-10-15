@@ -8,5 +8,5 @@ def load_from_json_file(filename):
     """ From Jason to object FILE """
     
     with open(filename) as file:
-        save_Jason = json.loads(filename)
-        return(save_Jason)
+        j_to_obj = json.loads(filename)
+        return(j_to_obj)
