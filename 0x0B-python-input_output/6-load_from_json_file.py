@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """ creates an Object from a “JSON file”: """
-import json
 
+
+import json
 
 def load_from_json_file(filename):
     """ From Jason to object FILE """
