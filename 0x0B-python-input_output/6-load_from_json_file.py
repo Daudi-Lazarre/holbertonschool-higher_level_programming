@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" creates an Object from a “JSON file”: """
+""" Module: Obj to Jason """
 
 
 import json
