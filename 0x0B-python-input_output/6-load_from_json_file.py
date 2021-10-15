@@ -11,7 +11,3 @@ def save_to_json_file(my_obj, filename):
         save_Jason = json.loads(my_obj)
         file.write(save_Jason)
         return(save_Jason)
-
-
-# You don’t need to manage exceptions if the JSON string doesn’t represent an object.
-# You don’t need to manage file permissions / exceptions.
