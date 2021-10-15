@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-""" writes a string to a text file (UTF8) and returns char num. """
+""" reads a string to a text file (UTF8) and returns char num. """
 
 
-def write_file(filename="", text=""):
+def read_file(filename=""):
     """ must use with statement here """
 
     with open(filename, encoding="UTF-8") as file:
