@@ -9,5 +9,4 @@ def save_to_json_file(my_obj, filename):
     
     with open(filename) as file:
         save_Jason = json.loads(my_obj)
-        file.write(save_Jason)
         return(save_Jason)
