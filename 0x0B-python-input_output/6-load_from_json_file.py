@@ -7,7 +7,7 @@ import json
 def save_to_json_file(my_obj, filename):
     """ From Jason to object FILE """
     
-    with open(filename, mode='w', encoding="UTF-8") as file:
+    with open(filename) as file:
         save_Jason = json.loads(my_obj)
         file.write(save_Jason)
         return(save_Jason)
