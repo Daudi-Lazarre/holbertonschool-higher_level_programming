@@ -6,4 +6,5 @@ def append_write(filename="", text=""):
     """ must use with statement here """
 
     with open(filename, mode='a', encoding="UTF-8") as file:
-        return(file.write(file))
+        append_string = file.write(file)
+        return(append_string)
