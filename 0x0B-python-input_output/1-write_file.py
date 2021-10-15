@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Reads a text file (UTF8) and prints it to stdout """
+""" Write a text file (UTF8) and prints it to stdout """
 
 
 def write_file(filename="", text=""):

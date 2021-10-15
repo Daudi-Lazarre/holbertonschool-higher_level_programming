@@ -6,6 +6,4 @@ def write_file(filename="", text=""):
     """ must use with statement here """
 
     with open(filename, encoding="UTF-8") as file:
-        print(filename)
-        read_the_line = file.read()
-    print(read_the_line, end="")
+        print(file.read(), end="")
