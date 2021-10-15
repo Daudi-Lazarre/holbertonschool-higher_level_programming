@@ -1,4 +1,4 @@
-#!/usr/bin/python3#!/usr/bin/python3
+#!/usr/bin/python3
 """ creates an Object from a “JSON file”: """
 
 
