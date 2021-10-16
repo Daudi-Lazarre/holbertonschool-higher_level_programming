@@ -4,16 +4,17 @@
 
 class Rectangle:
     """ Get Rekt """
+
     def __init__(self, width=0, height=0):
         """ * Launching rectangle into existence * """
         self.height = height
         self.width = width
-    
+
     @property
     def height(self):
         """ Remember: Decorators allow for attributes to be modified """
         return self.__height
-    
+
     @height.setter
     def height(self, value):
         """ Set the height """
