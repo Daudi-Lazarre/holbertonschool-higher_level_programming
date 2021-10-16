@@ -3,6 +3,7 @@
 
 
 class Rectangle:
+    """ Get Rekt """
     def __init__(self, width=0, height=0):
         """ * Launching rectangle into existence * """
         self.height = height
