@@ -11,14 +11,18 @@ def pascal_triangle(n):
     two_dimensional_list = the main list
     one_dimensional_lists = the multiple lists within the bigger list 
     """
-    two_dimensional_list = []
-    if n <= 0:
-        """ print numbers in every spot"""
-        empty_list = []
-        return empty_list
-    
-    for line in range(1, n + 1):
-        line.append(1)
-        # I lost track of what I'm doing. Time to take a break.
-        for line 
+    two_Dimensional_List = []
+    if n > 0:
+        temp = []
+        for line in range(1, n + 1):
+            num = 1
+            for i in range(1, line + 1):
+                temp.append(num)
+                # This is the meat of the math right here...
+                num = int(num * (line - i) / i)
+            two_Dimensional_List.append(temp)
+            temp = []
+    return two_Dimensional_List
+
+
 
