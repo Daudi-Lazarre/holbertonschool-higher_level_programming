@@ -15,14 +15,11 @@ class Student:
 
     def to_json(self, attrs=None):
         """ Retrieves a dictionary """
-
-        if not isinstance(attrs=None):
-            """ if attrs is not a list of strings """
-            new_dictionary = {}
-            for attribute in attrs:
-
+        if attrs is not None:
+            new_Dictionary = {}
+            for i in attrs:
+                if i in self.__dict__:
+                    new_Dictionary[i] = self.__dict__[i]
+                return(new_Dictionary)
+            else:
                 return self.__dict__
-
-        for attribute in attrs:
-            if not isinstance(attribute):
-                
