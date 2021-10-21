@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-""" Write a class Student that defines a student by: (based on 9-student.py)
-
- """
+""" Write a class Student that defines a student by: (based on 9-student.py) """
 
 
 class Student:
@@ -20,6 +18,6 @@ class Student:
             for i in attrs:
                 if i in self.__dict__:
                     new_Dictionary[i] = self.__dict__[i]
-                return(new_Dictionary)
-            else:
-                return self.__dict__
+            return(new_Dictionary)
+        else:
+            return self.__dict__
