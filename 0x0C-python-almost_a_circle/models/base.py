@@ -1,8 +1,9 @@
 #!/usr/bin/python3
+""" Base class """
+
 
 class Base:
     """ Contains private class attributes... """
-
 
     __nb_objects = 0
 
