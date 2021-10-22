@@ -41,3 +41,23 @@ class Base:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+
+    @property
+    def x(self):
+        """ Set the value of x """
+        return self.__x
+
+    @x.setter
+    def x(self, value):
+        """ Set the x value """
+        self.__x = value
+
+    @property
+    def y(self):
+        """ Set the value of y """
+        return self.__y
+
+    @y.setter
+    def y(self, value):
+        """ Set the y value """
+        self.__y = value
