@@ -31,6 +31,13 @@ class Rectangle(Base):
         if y < 0:
             raise ValueError("y must be >= 0")
 
+    def update(self, *args):
+        """ Assigns argument to each attribute. """
+        if args:
+            attributes = ("id", "width", "height", "x", "y")
+            for attribute in range(0, len(args)):
+                setattr(self, attributes[attribute], args[attribute])
+
     def __str__(self):
         """ overriding the __str__ method """
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
