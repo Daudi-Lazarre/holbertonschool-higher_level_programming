@@ -31,12 +31,17 @@ class Rectangle(Base):
         if y < 0:
             raise ValueError("y must be >= 0")
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """ Assigns argument to each attribute. """
         if args:
             attributes = ("id", "width", "height", "x", "y")
             for attribute in range(0, len(args)):
                 setattr(self, attributes[attribute], args[attribute])
+        else:
+            for key, value in kwargs.items():
+                if hasattr(self, key):
+                    setattr(self, key, value)
+
 
     def __str__(self):
         """ overriding the __str__ method """
