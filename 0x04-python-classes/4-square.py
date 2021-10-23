@@ -40,6 +40,6 @@ class Square:
             for key in range(size):
                 for key in range(size):
                     print("#", end="")
-                print()
+                print("")
         else:
             print("")
