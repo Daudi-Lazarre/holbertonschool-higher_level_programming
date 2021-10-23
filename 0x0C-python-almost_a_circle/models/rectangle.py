@@ -2,12 +2,12 @@
 """ Base class: rectangle """
 from models.base import Base
 
-""" Rectangle class """
+
 class Rectangle(Base):
+    """ Rectangle class """
 
-    """ the equivalent of initializing a function """
     def __init__(self, width, height, x=0, y=0, id=None):
-
+        """ the equivalent of initializing a function """
         super().__init__(id)
         self.__width = width
         self.__height = height
@@ -31,9 +31,8 @@ class Rectangle(Base):
         if y < 0:
             raise ValueError("y must be >= 0")
 
-    """ overriding the __str__ method """
     def __str__(self):
-
+        """ overriding the __str__ method """
         return "[Rectangle] {} {}/{} - {}/{}".format(
             self.id,
             self.x,
@@ -42,9 +41,8 @@ class Rectangle(Base):
             self.height,
         )
 
-    """ prints in stdout the Rectangle instance with the character # """
     def display(self):
-
+        """ prints in stdout the Rectangle instance with the character # """
         for key in range(0, self.__y):
             print()
         for key in range(self.__height):
