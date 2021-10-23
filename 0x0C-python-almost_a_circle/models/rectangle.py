@@ -43,17 +43,15 @@ class Rectangle(Base):
 
     def display(self):
         """ prints in stdout the Rectangle instance with the character # """
-        for long in range(self.y):
-            print("")
-        for long in range(self.__height):
-            for wide in(self.__width + self.__x):
-                if long < self.x:
+        for key in range(0, self.__y):
+            print()
+        for key in range(self.__height):
+            for value in range(self.__width + self.__x):
+                if value < self.x:
                     print(" ", end="")
-            else:
-                print("#", end="")
-            for wide in range(self.__width):
-                print("#", end="")
-            print("")
+                else:
+                    print("#", end="")
+            print()
 
     @property
     def width(self):
