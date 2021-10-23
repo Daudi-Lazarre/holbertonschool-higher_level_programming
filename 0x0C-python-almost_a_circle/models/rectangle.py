@@ -31,6 +31,23 @@ class Rectangle(Base):
         if y < 0:
             raise ValueError("y must be >= 0")
 
+    def __str__(self):
+        """ overriding the __str__ method """
+        return "[Rectangle] {} {}/{} - {}/{}".format(
+            self.id,
+            self.x,
+            self.y,
+            self.width,
+            self.height,
+        )
+
+    def display(self):
+        """ prints in stdout the Rectangle instance with the character # """
+        for long in range(self.__height):
+            for wide in range(self.__width):
+                print("#", end="")
+            print("")
+
     @property
     def width(self):
         """ Set the width """
