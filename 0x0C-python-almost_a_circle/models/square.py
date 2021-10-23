@@ -33,7 +33,7 @@ class Square(Rectangle):
 
     def __str__(self):
         """ overriding the __str__ method """
-        return "[Rectangle] ({}) {}/{} - {}/{}".format(
+        return "[Square] ({}) {}/{} - {}".format(
             self.id,
             self.x,
             self.y,
