@@ -1,4 +1,4 @@
--- Creates database and user
+-- Create database and user
 CREATE DATABASE
     IF NOT EXISTS `hbtn_0d_2`;
 CREATE USER
