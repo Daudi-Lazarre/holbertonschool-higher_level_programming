@@ -9,7 +9,7 @@
 // else "Arguments found"
 
 
-const value.argv.length;
+const value = argv.length;
 
 if (value < 3) {
     console.log('No argument');
