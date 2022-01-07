@@ -1,5 +1,10 @@
 #!/usr/bin/node
 
-console.log("C is fun");
-console.log("Python is cool");
-console.log("Javascript is amazing");
+const lies = "C is fun"
+const facts = "Python is cool"
+const moreFacts = "Javascript is amazing"
+
+
+console.log(lies)
+console.log(facts)
+console.log(moreFacts)
