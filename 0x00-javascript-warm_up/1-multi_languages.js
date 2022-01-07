@@ -5,4 +5,6 @@ const facts = "Python is cool"
 const moreFacts = "Javascript is amazing"
 
 
-console.log(lies, facts, moreFacts)
+console.log(lies)
+console.log(facts)
+console.log(moreFacts)
