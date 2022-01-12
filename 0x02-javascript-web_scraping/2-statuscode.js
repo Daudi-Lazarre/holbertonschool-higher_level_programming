@@ -6,7 +6,7 @@ const URL = argv[2];
 
 request(URL, function (err, response) {
     if (err) {
-        console.error('error:', err)
+        console.error('error:', error)
     } else {
         console.log(`code: ${response.statusCode}`);
     }
