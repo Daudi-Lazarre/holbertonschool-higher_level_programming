@@ -7,8 +7,7 @@ const request = require('request');
 request(URL, function (error, response, body) {
   if (error) {
     console.log(error);
-  } 
-  else {
+  } else {
     const rbody = JSON.parse(body);
     const dictionary = {};
     for (const x of rbody) {
