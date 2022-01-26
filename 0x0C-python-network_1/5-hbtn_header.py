@@ -2,9 +2,9 @@
 """Get header"""
 
 import requests
+from requests import get
 import sys
 
+
 if __name__ == "__main__":
-    with requests.get(sys.argv[1]) as f:
-        myHeader = f.getheader("X-Request-Id")
-        print("{}".format(myHeader))
+        print("{}".format(requests.get(sys.argv[1]).headers.get("X-Request-Id")))
