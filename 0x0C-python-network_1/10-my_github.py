@@ -2,7 +2,6 @@
 
 
 import requests
-from requests import get
 import sys
 
 if __name__ == "__main__":
