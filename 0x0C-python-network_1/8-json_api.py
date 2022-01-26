@@ -4,13 +4,13 @@
 import requests
 import sys
 
-q = sys.argv[1]
+q = sys.argv
 
 if __name__ == "__main__":
     if len(q) < 1:
         data = {"q": ""}
     elif len(q) > 1:
-        data = sys.argv[1]
+        data = {"q": sys.argv[1]}
 
     try:
         url = requests.post("http://0.0.0.0:5000/search_user", data)
