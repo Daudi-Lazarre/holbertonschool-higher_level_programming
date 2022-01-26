@@ -3,9 +3,8 @@
 
 import requests
 import sys
-from requests import get
 
 if __name__ == "__main__":
     with requests.get(sys.argv[1]) as f:
-        myHeader = f.get("X-Request-Id")
+        myHeader = f.getheader("X-Request-Id")
         print("{}".format(myHeader))
