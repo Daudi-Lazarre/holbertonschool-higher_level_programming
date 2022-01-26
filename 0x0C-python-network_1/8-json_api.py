@@ -17,7 +17,7 @@ if __name__ == "__main__":
 
         if url.json():
             print("[{}] {}".format(url.json().get("id"),
-                                    url.json().get("name")))
+                                   url.json().get("name")))
 
         else:
             print("No result")
