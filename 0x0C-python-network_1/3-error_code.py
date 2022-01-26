@@ -12,4 +12,4 @@ if __name__ == "__main__":
 
     except ValueError as message:
         message = urllib.error.HTTPError
-        print("Error code: {}".format(message))
+        print("Error code: {}".format(message.code))
