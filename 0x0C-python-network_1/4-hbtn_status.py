@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 """ Holberton status """
+from urllib import response
 import requests
 
-fetch = requests.get("https://intranet.hbtn.io/status")
+response = requests.get("https://intranet.hbtn.io/status")
 
 print("Body response:")
-print("\t- type: {}".format(type(fetch)))
-print("\t- content: {}".format(fetch))
+print("\t- type: {}".format(type(response)))
+print("\t- content: {}".format(response))
