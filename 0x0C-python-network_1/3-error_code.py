@@ -9,4 +9,4 @@ if __name__ == "__main__":
         s = url.read()
 
         message = urllib.error.HTTPError
-        print("Error code: {}".format(message))
+    print("Error code: {}".format(message))
