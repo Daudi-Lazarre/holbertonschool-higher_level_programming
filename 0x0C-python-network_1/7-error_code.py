@@ -4,8 +4,6 @@
 import requests
 import sys
 
-status_code = sys.argv[2]
-
 if status_code >= 400:
     try:
         with requests(sys.argv[1]) as url:
