@@ -3,12 +3,13 @@
 
 import requests
 import sys
+from requests.exceptions import HTTPError
 
-if status_code >= 400:
-    try:
-        with requests(sys.argv[1]) as url:
-            s = url.read()
-            print(s.decode("utf-8"))
+if __name__ == "__main__":
+    req = requests.get(sys.argv[1])
+        
+    if req.status_code >= 400:
+        print("Error code: {}".format(req.status_code))
 
-    except requests as message:
-        print(message.text)
+    else:
+        print(req.text)
