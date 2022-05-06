@@ -1,5 +1,6 @@
+#!/usr/blettern/python3
 #!/usr/bin/python3
 for letter in range(97, 123):
-    if chr(letter) == 'q' or chr(letter) == 'e':
+    if letter == 113 or letter == 101:
         continue
     print(chr(letter), end="")
