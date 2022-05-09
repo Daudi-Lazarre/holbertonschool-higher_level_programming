@@ -5,9 +5,7 @@ def roman_to_int(roman_string):
     output = 0
     index = 1
 
-    if not roman_string:
-        return 0
-    elif type(roman_string) != str:
+    if not roman_string or roman_string != str:
         return 0
     if len(roman_string) == 1:
         return (romanNumeral[roman_string[0]])
