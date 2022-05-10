@@ -36,10 +36,10 @@ class Square:
     """ Print the things """
     def my_print(self):
         size = self.__size
-        if type(size) != 0:
+        if type(size) == 0:
+            print()
+        for key in range(size):
             for key in range(size):
-                for key in range(size):
-                    print("#", end="")
-                print("")
+                print("#", end="")
         else:
             print("")
