@@ -11,7 +11,3 @@ class Square:
             raise TypeError("size must be integer")
         if size < 0:
             raise ValueError("size must be >= 0")
-
-
-# Three characters off
-# No standard error
