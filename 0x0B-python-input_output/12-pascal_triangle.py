@@ -1,28 +1,20 @@
 #!/usr/bin/python3
-""" Module: Pascal's Triangle """
+"""
+    Try some angles
+"""
 
 
 def pascal_triangle(n):
-    """ A set of lists that contain integers
-    and those lists are in a list...
-    which will ultimately form a 2D list.
-    
-    empty_list = no numbers
-    two_dimensional_list = the main list
-    one_dimensional_lists = the multiple lists within the bigger list 
-    """
-    two_Dimensional_List = []
-    if n > 0:
-        temp = []
-        for line in range(1, n + 1):
-            num = 1
-            for i in range(1, line + 1):
-                temp.append(num)
-                # This is the meat of the math right here...
-                num = int(num * (line - i) / i)
-            two_Dimensional_List.append(temp)
-            temp = []
-    return two_Dimensional_List
+    """pascal_triangle"""
+    if n <= 0:
+        return ""
 
-
-
+    tri = [[1]]
+    for current in range(1, n):
+        row = [1]
+        prev = tri[current - 1]
+        for item in range(1, current):
+            row.append(prev[item] + prev[item - 1])
+        row.append(1)
+        tri.append(row)
+    return (tri)
