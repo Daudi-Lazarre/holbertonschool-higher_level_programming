@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-""" 
-    Add item
+"""
+    File: 7-add_item.py
 """
 import sys
 
