@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-""" appends a string at the end of a text file (UTF8) and returns the number of characters added: """
+"""
+    Append and write file
+"""
 
 
 def append_write(filename="", text=""):
-    """ must use with statement here """
-
-    with open(filename, mode='a', encoding="UTF-8") as file:
-        append_string = file.write(text)
-        return(append_string)
+    """Write a string to a UTF-8 file"""
+    with open(filename, 'a', encoding='utf-8') as fd:
+        return fd.write(text)
