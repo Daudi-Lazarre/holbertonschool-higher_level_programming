@@ -1,13 +1,11 @@
 #!/usr/bin/python3
-""" creates an Object from a “JSON file”: """
-
-
+"""
+    Load from JSON
+"""
 import json
 
 
 def load_from_json_file(filename):
-    """ From Jason to object FILE """
-    
-    with open(filename) as file:
-        j_to_obj = json.load(file)
-        return(j_to_obj)
+    """Load from JSON file name"""
+    with open(filename, 'r', encoding='utf-8') as fd:
+        return(json.load(fd))
