@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-    File: 7-add_item.py
-"""
+""" File: 7-add_item.py"""
 import sys
 
 if __name__ == "__main__":
