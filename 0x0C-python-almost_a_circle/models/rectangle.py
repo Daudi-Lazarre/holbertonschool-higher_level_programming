@@ -1,18 +1,19 @@
 #!/usr/bin/python3
-"""Rectangle class"""
+""" Base class: rectangle """
 from models.base import Base
 
 
 class Rectangle(Base):
-    """Rectangle class"""
+    """ Rectangle class """
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """Rectangle object"""
+        """ the equivalent of initializing a function """
         super().__init__(id)
         self.__width = width
         self.__height = height
         self.__x = x
         self.__y = y
+        
         if type(height) is not int:
             raise TypeError("height must be an integer")
         if height <= 0:
@@ -30,42 +31,77 @@ class Rectangle(Base):
         if y < 0:
             raise ValueError("y must be >= 0")
 
-    @property
-    def height(self):
-        """height"""
-        return self.__height
+    def update(self, *args, **kwargs):
+        """ Assigns argument to each attribute. """
+        if args:
+            attributes = ("id", "width", "height", "x", "y")
+            for attribute in range(0, len(args)):
+                setattr(self, attributes[attribute], args[attribute])
+        else:
+            for key, value in kwargs.items():
+                if hasattr(self, key):
+                    setattr(self, key, value)
 
-    @height.setter
-    def height(self, value):
-        """setter for height"""
-        if type(value) is not int:
-            raise TypeError("height must be an integer")
-        if value <= 0:
-            raise ValueError("height must be > 0")
-        self.__height = value
+
+    def __str__(self):
+        """ overriding the __str__ method """
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(
+            self.id,
+            self.x,
+            self.y,
+            self.width,
+            self.height,
+        )
+
+    def display(self):
+        """ prints in stdout the Rectangle instance with the character # """
+        for key in range(0, self.__y):
+            print()
+        for key in range(self.__height):
+            for value in range(self.__width + self.__x):
+                if value < self.x:
+                    print(" ", end="")
+                else:
+                    print("#", end="")
+            print()
 
     @property
     def width(self):
-        """width"""
+        """ Set the width """
         return self.__width
 
     @width.setter
     def width(self, value):
-        """setter for width"""
+        """ Set the width """
         if type(value) is not int:
             raise TypeError("width must be an integer")
-        if value <= 0:
-            raise ValueError("width must be > 0")
+        if value < 0:
+                raise ValueError("width must be >= 0")
         self.__width = value
 
     @property
+    def height(self):
+        """ Remember: Decorators allow for attributes to be modified """
+        return self.__height
+
+    @height.setter
+    def height(self, value):
+        """ Set the height """
+        if type(value) is not int:
+            raise TypeError("height must be an integer")
+        if value < 0:
+            raise ValueError("height must be >= 0")
+        self.__height = value
+
+
+    @property
     def x(self):
-        """gets x"""
+        """ Set the value of x """
         return self.__x
 
     @x.setter
     def x(self, value):
-        """setter for x"""
+        """ Set the x value """
         if type(value) is not int:
             raise TypeError("x must be an integer")
         if value < 0:
@@ -74,12 +110,12 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        """gets y"""
+        """ Set the value of y """
         return self.__y
 
     @y.setter
     def y(self, value):
-        """setter for y"""
+        """ Set the y value """
         if type(value) is not int:
             raise TypeError("y must be an integer")
         if value < 0:
@@ -87,31 +123,5 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
-        """Returns area of a rectangle"""
+        """ Area equals length * width """
         return self.__width * self.__height
-
-    def display(self):
-        """Prints rectangle with # to stdout"""
-        for i in range(0, self.__y):
-            print("")
-        for i in range(0, self.__height):
-            print(" " * self.__x, end="")
-            for j in range(0, self.__width):
-                print("#", end="")
-            print("")
-
-    def __str__(self):
-        """Return string representation"""
-        strrep = "[Rectangle] ({}) {}/{}".format(self.id, self.__x, self.__y)
-        strrep += " - {}/{}".format(self.width, self.height)
-        return strrep
-
-    def update(self, *args, **kwargs):
-        """Update Rectangle by adding public method that assigns arguments"""
-        if (args and args is not []):
-            key = ["id", "width", "height", "x", "y"]
-            for i in range(0, len(args)):
-                setattr(self, key[i], args[i])
-        else:
-            for key in kwargs.keys():
-                setattr(self, key, kwargs[key])
