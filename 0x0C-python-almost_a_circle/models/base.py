@@ -6,7 +6,7 @@ import json
 
 
 class Base(object):
-    """Base: Definition for the Base class"""
+    """Base: Definition"""
     __nb_objects = 0
 
     def __init__(self, id=None):
