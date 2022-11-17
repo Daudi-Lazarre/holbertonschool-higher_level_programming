@@ -1,5 +1,6 @@
-url = 'https://fourtonfish.com/hellosalut/?lang=fr';
+const URL = 'https://fourtonfish.com/hellosalut/?lang=fr';
 
-$.get(url, function (data, textStatus) {
-  $('div#hello').text(data.hello);
+$.getJSON(URL, function (data) {
+  const hi = data.hello;
+  $('DIV#hello').text(hi);
 });
